@@ -22,7 +22,7 @@ public class MinimalPositiveInteger {
             System.exit(2);
         }
         for(int i=0;i<array.length;i++) {
-            if (i < min || i > max) {
+            if (array[i] < min || array[i] > max) {
                 System.out.println("ERROR: input array contains at least 1 value beyond acceptable limits");
                 System.exit(3);
             }
@@ -34,7 +34,7 @@ public class MinimalPositiveInteger {
             if (array[i] > 0) positivesNum++;
         }
 
-        //returning 0 if there are no positive integers
+        //returning 1 if there are no positive integers
         if(positivesNum==0) return 1;
 
         //filling arraylist with positive integers of input array
