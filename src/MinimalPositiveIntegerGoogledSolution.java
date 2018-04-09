@@ -62,14 +62,14 @@ import java.util.List;
                 }
             }
             
-            //searching for the first false
+            //searching for the first false -  вот до этого додумался
             for(int i=1;i<size;i++){
                 if (!arrayOfBools[i]){
                     return i;
                 }
             }
             
-            //if all values equal true, the answer is the size of the list
+            //if all values equal true, the answer is the size of the list - а до этого уже нет
             return size;
         }
 
